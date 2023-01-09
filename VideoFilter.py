@@ -122,8 +122,8 @@ class VideoPlayer(QMainWindow):
             self,
             "Open Video File",
             "",
-            "Videos (*.mp4 *.avi);;All Files (*)",
-            options = QFileDialog.Options())
+            "Videos (*.mp4 *.avi *.m4v *.mkv *.mpg *.mpeg);;All Files (*)",
+            options=QFileDialog.Options())
         if filename:
             self.source_video_path = filename
 
