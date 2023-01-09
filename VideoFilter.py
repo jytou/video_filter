@@ -77,9 +77,12 @@ class VideoPlayer(QMainWindow):
 
         # The scrolling area
         filters_scroll = QScrollArea()
-        self.filters_list_layout = QVBoxLayout()
+        filters_scroll.setWidgetResizable(True)
+        filters_scroll.setMinimumWidth(300)
+        filters_list_widget = QWidget()
+        self.filters_list_layout = QVBoxLayout(filters_list_widget)
         self.filters_list_layout.addStretch(1)
-        filters_scroll.setLayout(self.filters_list_layout)
+        filters_scroll.setWidget(filters_list_widget)
         filters_layout.addWidget(filters_scroll)
 
         # Now the video part
