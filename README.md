@@ -31,6 +31,8 @@ This project is very basic, a few ideas of things that could easily be added or 
 - disable filters rather than needing to remove them,
 - more options in the configuration of filters,
 - deal with grayscale videos (currently only deals with color),
+- add some video controls and embed them in the video frame,
+- handle different video resolutions,
 - there is a great deal of missing exception handling,
 - add some mechanism to throttle the framerate or skip frames if the computer cannot cope with real-time filtering.
 
